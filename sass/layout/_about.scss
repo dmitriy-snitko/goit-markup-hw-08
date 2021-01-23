@@ -1,0 +1,33 @@
+.about {
+  padding-top: 0;
+
+  &__list {
+    display: flex;
+    margin: -15px;
+  }
+
+  &__item {
+    position: relative;
+    margin: 15px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+
+  &__description {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding: 27px;
+
+    @include font(14px, 700, 16px);
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $primery-light-color;
+    background-color: $about-title-bgc;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}

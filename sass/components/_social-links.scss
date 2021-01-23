@@ -1,0 +1,39 @@
+.social-links {
+  display: flex;
+  justify-content: space-between;
+
+  width: 206px;
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    &--light-theme {
+      color: $icons-color;
+
+      transition: color 250ms $cubic, background-color 250ms $cubic;
+    }
+
+    &--dark-them {
+      color: $primery-light-color;
+      background-color: $footer-social-btn-bgc;
+
+      transition: background-color 250ms $cubic;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $primery-light-color;
+    }
+  }
+}

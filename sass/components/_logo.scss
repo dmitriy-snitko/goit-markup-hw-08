@@ -1,0 +1,14 @@
+.logo {
+  font-family: $logo-font;
+  @include font(24px, 700, 28px);
+
+  color: #000000;
+
+  &__accent {
+    color: $accent-color;
+  }
+
+  &--inverse {
+    color: $primery-light-color;
+  }
+}

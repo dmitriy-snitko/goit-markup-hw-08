@@ -1,0 +1,36 @@
+.menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  .icon-cross {
+    fill: currentColor;
+    display: none;
+
+    transition: color 250ms $cubic;
+  }
+
+  .icon-menu {
+    fill: currentColor;
+
+    transition: color 250ms $cubic;
+  }
+
+  &.is-open {
+    .icon-cross {
+      display: block;
+    }
+
+    .icon-menu {
+      display: none;
+    }
+  }
+}
